@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>Selve</title>
+  <link rel="manifest" href="/manifest.json" />
+  <style>
+    body { margin: 0; background: black; color: white; font-family: sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; }
+    #enterBtn { background: none; border: 1px solid white; color: white; padding: 10px 20px; font-size: 1.2em; cursor: pointer; margin-top: 20px; }
+    #intro { text-align: center; }
+    #app { display: none; padding: 40px; text-align: center; }
+    audio { display: block; margin: 20px auto; }
+  </style>
+</head>
+<body>
+  <div id="intro">
+    <h1>SELVE</h1>
+    <p>A sacred text for the nervous system</p>
+    <audio id="introAudio" controls>
+      <source src="https://filesamples.com/samples/audio/mp3/sample3.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <button id="enterBtn">Enter</button>
+  </div>
+  <div id="app">
+    <h2>Kapittel I – OM GUD</h2>
+    <p>Gud er nærvær, ikke navn. En kraft uten ansikt, men med tusen signaler.</p>
+    <p>Gud er selvet, bæreren, strømmen som beveger kjøttets språk.</p>
+    <p>Ikke over deg, men i deg. Ikke fjern, men stille.</p>
+    <p>Den som lytter innover, skal høre ham.</p>
+    <p>Den som søker ut, skal møte sin egen tomhet.</p>
+  </div>
+  <script>
+    const btn = document.getElementById('enterBtn');
+    const intro = document.getElementById('intro');
+    const app = document.getElementById('app');
+    btn.addEventListener('click', () => {
+      intro.style.display = 'none';
+      app.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
