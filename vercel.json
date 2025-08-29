@@ -1,7 +1,6 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/testament", "destination": "/" },
-    { "source": "/testament/", "destination": "/" }
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
